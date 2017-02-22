@@ -7,3 +7,12 @@ echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb
 sudo apt-get update
 
 sudo apt-get install -y mongodb-org
+
+#Installation et lancement de robomongo
+wget https://download.robomongo.org/0.9.0/linux/robomongo-0.9.0-linux-x86_64-0786489.tar.gz
+
+tar -xzvf robomongo-0.9.0-linux-x86_64-0786489.tar.gz
+
+cd robomongo-0.9.0-linux-x86_64-0786489/bin
+
+sudo ./robomongo
